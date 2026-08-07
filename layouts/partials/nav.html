@@ -1,0 +1,52 @@
+{{ $r := hugo.Data.restaurant }}
+<nav class="border-b-2"
+     style="background: var(--color-bg-sand); border-color: var(--color-primary-burgundy);">
+  <div class="max-w-screen-xl mx-auto flex items-center justify-between px-6 py-3">
+
+    <a href="/" data-nav="home" class="flex items-center gap-3 no-underline">
+      <img
+        src="/images/West - Beeldmerk/Beeldmerk - SVG/West -Beeldmerk - Donkerbruin.svg"
+        alt="West beeldmerk"
+        class="w-9 h-9"
+      />
+      <span class="font-black text-xl tracking-tight"
+            style="font-family: var(--font-title); color: var(--color-text-dark);">
+        {{ $r.naam }}
+      </span>
+    </a>
+
+    <div class="hidden md:flex gap-8">
+      <a href="/" data-nav="home"
+         class="text-sm font-bold transition-colors nav-link"
+         style="color: var(--color-primary-burgundy);">
+        Home
+      </a>
+      <a href="#menu" data-nav="menu"
+         class="text-sm font-bold transition-colors nav-link"
+         style="color: var(--color-primary-burgundy);">
+        Menu
+      </a>
+      <a href="#contact" data-nav="contact"
+         class="text-sm font-bold transition-colors nav-link"
+         style="color: var(--color-primary-burgundy);">
+        Contact
+      </a>
+    </div>
+
+    <div class="flex md:hidden gap-5">
+      <a href="#menu" data-nav="menu"
+         class="text-xs font-bold"
+         style="color: var(--color-primary-burgundy);">Menu</a>
+      <a href="#contact" data-nav="contact"
+         class="text-xs font-bold"
+         style="color: var(--color-primary-burgundy);">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .nav-active {
+    color: var(--color-primary-burgundy) !important;
+    border-bottom: 2px solid var(--color-primary-burgundy);
+  }
+</style>

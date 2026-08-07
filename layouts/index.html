@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body style="margin: 0; background: var(--color-bg-sand); color: var(--color-text-dark);">
+
+  {{ partial "nav.html" . }}
+
+  <main>
+    {{ partial "section-home.html" . }}
+    {{ partial "section-menu.html" . }}
+    {{ partial "section-contact.html" . }}
+  </main>
+
+  <!-- JavaScript -->
+  {{ $nav := resources.Get "js/nav.js" | minify | fingerprint }}
+  <script src="{{ $nav.RelPermalink }}" integrity="{{ $nav.Data.Integrity }}" defer></script>
+
+  {{ $instagram := resources.Get "js/instagram.js" | minify | fingerprint }}
+  <script src="{{ $instagram.RelPermalink }}" integrity="{{ $instagram.Data.Integrity }}" defer></script>
+
+</body>
+</html>

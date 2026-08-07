@@ -1,0 +1,81 @@
+{{ $r := hugo.Data.restaurant }}
+<section id="section-contact" class="site-section flex-col"
+         style="background: var(--color-bg-sand);">
+
+  <div class="flex-1 min-h-0">
+    <div class="max-w-screen-xl mx-auto h-full grid md:grid-cols-2">
+
+      <div class="px-8 py-8 border-r overflow-y-auto" style="border-color: rgba(0,0,0,0.08);">
+        <h2 class="text-lg font-bold italic mb-4 pb-2 border-b"
+            style="font-family: var(--font-heading); color: var(--color-primary-burgundy); border-color: rgba(100,47,50,0.2);">
+          Vind ons
+        </h2>
+        <div class="space-y-3 mb-8 text-sm" style="color: var(--color-text-dark);">
+          <div class="flex gap-3">
+            <span style="color: var(--color-primary-burgundy);">📍</span>
+            <span>{{ $r.adres }}<br/>{{ $r.postcode }} {{ $r.stad }}</span>
+          </div>
+          <div class="flex gap-3">
+            <span style="color: var(--color-primary-burgundy);">📞</span>
+            <a href="tel:{{ $r.telefoon }}" class="font-bold"
+               style="color: var(--color-text-dark);">{{ $r.telefoon }}</a>
+          </div>
+          <div class="flex gap-3">
+            <span style="color: var(--color-primary-burgundy);">✉️</span>
+            <a href="mailto:{{ $r.email }}"
+               style="color: var(--color-text-dark);">{{ $r.email }}</a>
+          </div>
+        </div>
+
+        <h2 class="text-lg font-bold italic mb-4 pb-2 border-b"
+            style="font-family: var(--font-heading); color: var(--color-primary-burgundy); border-color: rgba(100,47,50,0.2);">
+          Openingstijden
+        </h2>
+        <div class="space-y-1">
+          {{ range hugo.Data.openingstijden.dagen }}
+          <div class="flex justify-between text-sm py-1 border-b"
+               style="border-color: rgba(0,0,0,0.06);">
+            <span class="font-bold" style="color: var(--color-primary-burgundy);">{{ .dag }}</span>
+            {{ if .open }}
+            <span style="color: var(--color-text-dark);">{{ .van }} – {{ .tot }}</span>
+            {{ else }}
+            <span style="color: rgba(17,14,12,0.4);">Gesloten</span>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="flex flex-col">
+        {{ $lat := $r.osm_lat | float }}
+        {{ $lon := $r.osm_lon | float }}
+        {{ $d := 0.005 }}
+        {{ $bbox := printf "%.4f,%.4f,%.4f,%.4f" (sub $lon $d) (sub $lat $d) (add $lon $d) (add $lat $d) }}
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox={{ $bbox }}&layer=mapnik&marker={{ $r.osm_lat }},{{ $r.osm_lon }}"
+          class="flex-1 w-full"
+          style="border: 0; min-height: 200px;"
+          allowfullscreen=""
+          loading="lazy"
+          title="West Restaurant op de kaart">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="background: var(--color-primary-burgundy);">
+    <div class="max-w-screen-xl mx-auto py-5 px-8 text-center">
+      <p class="text-sm italic mb-1"
+         style="font-family: var(--font-heading); color: rgba(255,255,255,0.85);">
+        Reserveren? Bel ons direct —
+      </p>
+      <a href="tel:{{ $r.telefoon }}"
+         class="text-2xl font-black"
+         style="font-family: var(--font-title); color: white;">
+        {{ $r.telefoon }}
+      </a>
+    </div>
+  </div>
+
+</section>

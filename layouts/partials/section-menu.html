@@ -1,0 +1,50 @@
+<section id="section-menu" class="site-section flex-col"
+         style="background: var(--color-bg-cream-secondary);">
+
+  <div style="background: var(--color-bg-sand); border-bottom: 2px solid rgba(0,0,0,0.08);">
+    <div class="max-w-screen-xl mx-auto flex px-6 overflow-x-auto scrollbar-none">
+      {{ range hugo.Data.menu.categorieen }}
+      <button
+        data-tab="{{ .naam | urlize }}"
+        class="px-4 py-3 text-sm font-bold whitespace-nowrap border-b-2 border-transparent -mb-0.5 transition-colors"
+        style="color: var(--color-primary-burgundy);">
+        {{ .naam }}
+      </button>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="flex-1 overflow-y-auto py-6">
+    <div class="max-w-2xl mx-auto px-6 w-full">
+      {{ range hugo.Data.menu.categorieen }}
+      <div class="menu-tab-content" data-tab-content="{{ .naam | urlize }}">
+        {{ range .items }}
+        <div class="flex justify-between items-baseline py-3 border-b"
+             style="border-color: rgba(0,0,0,0.08);">
+          <div class="flex-1 pr-4">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-bold" style="color: var(--color-text-dark);">
+                {{ .naam }}
+              </span>
+              {{ if .vegetarisch }}
+              <span class="vegetarisch-badge text-xs" title="Vegetarisch">🌿</span>
+              {{ end }}
+            </div>
+            {{ if .omschrijving }}
+            <span class="text-xs italic" style="font-family: var(--font-heading); color: rgba(17,14,12,0.55);">
+              {{ .omschrijving }}
+            </span>
+            {{ end }}
+          </div>
+          <span class="text-sm font-bold whitespace-nowrap"
+                style="font-family: var(--font-heading); color: var(--color-primary-burgundy);">
+            € {{ .prijs }}
+          </span>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+</section>

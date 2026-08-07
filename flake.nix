@@ -30,6 +30,7 @@
               go
               jujutsu
               git
+              tailwindcss
               publish
             ];
 
@@ -39,7 +40,7 @@
               echo ""
               echo "  Commands:"
               echo "    hugo server       — lokale preview op http://localhost:1313"
-              echo "    hugo --minify     — productie build (output in public/)"
+              echo "    hugo --minify     — productie build (vereist: nix develop)"
               echo "    publish [message] — commit + push (Cloudflare deployt automatisch)"
               echo "    jj log            — geschiedenis"
               echo "    jj st             — status"
