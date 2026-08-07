@@ -1,0 +1,10 @@
+baseURL = "https://westrotterdam.nl"
+languageCode = "nl"
+title = "West — Italiaans Restaurant Rotterdam"
+defaultContentLanguage = "nl"
+
+[build]
+  writeStats = true
+
+[params]
+  description = "Italiaans restaurant in Rotterdam West. Eerlijk eten, eerlijke prijzen."

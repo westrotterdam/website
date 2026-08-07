@@ -1,0 +1,76 @@
+categorieen:
+  - naam: "Lunch"
+    items:
+      - naam: "Spaghetti Carbonara"
+        omschrijving: "Ei, guanciale, pecorino romano, zwarte peper"
+        prijs: "9.50"
+        vegetarisch: false
+      - naam: "Penne all'Arrabbiata"
+        omschrijving: "San Marzano tomaat, knoflook, peperoncino"
+        prijs: "8.50"
+        vegetarisch: true
+      - naam: "Risotto Funghi"
+        omschrijving: "Gemengde paddenstoelen, parmezaan, tijm"
+        prijs: "10.50"
+        vegetarisch: true
+      - naam: "Pizza Margherita"
+        omschrijving: "San Marzano, fior di latte, basilicum"
+        prijs: "8.00"
+        vegetarisch: true
+      - naam: "Bruschetta al Pomodoro"
+        omschrijving: "Geroosterd brood, tomaat, knoflook, basilicum"
+        prijs: "5.50"
+        vegetarisch: true
+
+  - naam: "Diner"
+    items:
+      - naam: "Bistecca alla Fiorentina"
+        omschrijving: "Gegrild vlees, rucola, parmezaan, citroen"
+        prijs: "16.50"
+        vegetarisch: false
+      - naam: "Salmone al Forno"
+        omschrijving: "Ovengebakken zalm, kappertjes, citroenboter"
+        prijs: "14.50"
+        vegetarisch: false
+      - naam: "Melanzane alla Parmigiana"
+        omschrijving: "Aubergine, tomaat, mozzarella, parmezaan"
+        prijs: "11.00"
+        vegetarisch: true
+      - naam: "Tagliatelle al Ragù"
+        omschrijving: "Langzaam gegaarde vleessaus, parmezaan"
+        prijs: "12.50"
+        vegetarisch: false
+
+  - naam: "Dolci"
+    items:
+      - naam: "Tiramisù"
+        omschrijving: "Huisgemaakt, mascarpone, espresso, amaretto"
+        prijs: "5.50"
+        vegetarisch: true
+      - naam: "Panna Cotta"
+        omschrijving: "Vanille, verse bessensaus"
+        prijs: "5.00"
+        vegetarisch: true
+      - naam: "Affogato"
+        omschrijving: "Vanille-ijs, dubbele espresso"
+        prijs: "4.50"
+        vegetarisch: true
+
+  - naam: "Dranken"
+    items:
+      - naam: "Espresso"
+        omschrijving: ""
+        prijs: "2.50"
+        vegetarisch: true
+      - naam: "Cappuccino"
+        omschrijving: ""
+        prijs: "3.00"
+        vegetarisch: true
+      - naam: "Huiswijn (glas)"
+        omschrijving: "Rood of wit"
+        prijs: "4.50"
+        vegetarisch: true
+      - naam: "San Pellegrino"
+        omschrijving: "250ml"
+        prijs: "2.50"
+        vegetarisch: true

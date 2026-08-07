@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-orange: #E9672F;
+  --color-light-blue: #D1E7FD;
+  --color-dark-green: #27422B;
+  --color-brown: #5D372B;
+  --color-bg-cream-primary: #FFECBA;
+  --color-bg-cream-secondary: #FFF7E0;
+  --color-text-dark: #110E0C;
+
+  --font-title: 'Inter', sans-serif;
+  --font-heading: 'Georgia', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* Sectie-switching: desktop toont één sectie per keer */
+@media (min-width: 768px) {
+  .site-section {
+    display: none;
+    min-height: 100vh;
+  }
+
+  .site-section.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Mobile: alle secties zichtbaar, normaal scrollen */
+@media (max-width: 767px) {
+  .site-section {
+    display: block;
+  }
+}
+
+/* Menu tabs */
+.menu-tab-content {
+  display: none;
+}
+
+.menu-tab-content.active {
+  display: block;
+}
+
+/* Vegetarisch icoon kleur */
+.vegetarisch-badge {
+  color: var(--color-dark-green);
+}

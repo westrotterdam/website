@@ -1,0 +1,29 @@
+dagen:
+  - dag: "Maandag"
+    open: true
+    van: "11:00"
+    tot: "22:00"
+  - dag: "Dinsdag"
+    open: true
+    van: "11:00"
+    tot: "22:00"
+  - dag: "Woensdag"
+    open: true
+    van: "11:00"
+    tot: "22:00"
+  - dag: "Donderdag"
+    open: true
+    van: "11:00"
+    tot: "22:00"
+  - dag: "Vrijdag"
+    open: true
+    van: "11:00"
+    tot: "23:00"
+  - dag: "Zaterdag"
+    open: true
+    van: "12:00"
+    tot: "23:00"
+  - dag: "Zondag"
+    open: true
+    van: "12:00"
+    tot: "21:00"

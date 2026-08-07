@@ -1,0 +1,10 @@
+naam: "West"
+telefoon: "010-0000000"
+email: "info@westrotterdam.nl"
+adres: "Straatnaam 00"
+postcode: "3000 AB"
+stad: "Rotterdam"
+instagram_handle: "west.rotterdam"
+instagram_url: "https://www.instagram.com/west.rotterdam/"
+# Plak hier de embed URL van Google Maps (via maps.google.com → Delen → Insluiten)
+google_maps_embed_url: ""
