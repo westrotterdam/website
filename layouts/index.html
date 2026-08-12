@@ -13,6 +13,8 @@
     {{ partial "section-contact.html" . }}
   </main>
 
+  {{ partial "footer.html" . }}
+
   <!-- JavaScript -->
   {{ $nav := resources.Get "js/nav.js" | minify | fingerprint }}
   <script src="{{ $nav.RelPermalink }}" integrity="{{ $nav.Data.Integrity }}" defer></script>
