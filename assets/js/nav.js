@@ -70,12 +70,13 @@
     navigateTo(hash);
 
     // Nav link clicks
-    document.querySelectorAll('[data-nav]').forEach(function (link) {
+    document.querySelectorAll('[data-nav], [data-section]').forEach(function (link) {
       link.addEventListener('click', function (e) {
+        var target = link.dataset.nav || link.dataset.section;
         if (!isMobile()) {
           e.preventDefault();
         }
-        navigateTo(link.dataset.nav);
+        navigateTo(target);
       });
     });
 
