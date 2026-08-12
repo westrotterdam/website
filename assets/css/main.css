@@ -83,11 +83,17 @@
   display: none;
 }
 
-.vegetarisch-badge {
+.btn-primary:active,
+.btn-primary:focus {
+  background: var(--color-primary-burgundy) !important;
+  color: white !important;
+  opacity: 0.85;
+  -webkit-tap-highlight-color: transparent;
+}
   color: var(--color-olive-green);
 }
 
-.slideshow-bg {
+.vegetarisch-badge {
   z-index: 0;
 }
 
