@@ -90,10 +90,12 @@
   opacity: 0.85;
   -webkit-tap-highlight-color: transparent;
 }
+
+.vegetarisch-badge {
   color: var(--color-olive-green);
 }
 
-.vegetarisch-badge {
+.slideshow-bg {
   z-index: 0;
 }
 
