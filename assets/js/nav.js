@@ -72,7 +72,9 @@
     // Nav link clicks
     document.querySelectorAll('[data-nav]').forEach(function (link) {
       link.addEventListener('click', function (e) {
-        e.preventDefault();
+        if (!isMobile()) {
+          e.preventDefault();
+        }
         navigateTo(link.dataset.nav);
       });
     });
@@ -82,7 +84,6 @@
 
   // Herbereken bij resize (mobile ↔ desktop overgang)
   window.addEventListener('resize', function () {
-    setNavHeight();
     if (!isMobile()) {
       const hash = window.location.hash.replace('#', '') || 'home';
       navigateTo(hash);
