@@ -17,6 +17,13 @@
 
           publish = pkgs.writeShellScriptBin "publish" ''
             set -e
+            echo "Running local build check..."
+            if ! hugo --minify > /dev/null 2>&1; then
+              echo "❌ Build failed! Aborting publish."
+              hugo --minify
+              exit 1
+            fi
+            echo "✅ Build passed."
             jj describe -m "''${1:-chore: update site}"
             jj bookmark set main -r @
             jj git push --bookmark main
