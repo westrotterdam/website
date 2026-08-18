@@ -16,13 +16,15 @@
 
   <div class="flex-1 overflow-y-auto py-6">
     <div class="max-w-2xl mx-auto px-6 w-full">
-      <div class="mb-6 flex gap-4 text-xs" style="color: rgba(17,14,12,0.6);">
-        <span class="flex items-center gap-1"><span class="text-sm">🌿</span> Vegetarisch</span>
-        <span class="flex items-center gap-1"><span class="text-sm">🌱</span> Vegan</span>
-      </div>
-
       {{ range hugo.Data.menu.hoofdcategorieen }}
       <div class="menu-tab-content" data-tab-content="{{ .naam | urlize }}">
+        
+        {{ if eq (.naam | urlize) "eten" }}
+        <div class="mb-6 flex gap-4 text-xs" style="color: rgba(17,14,12,0.6);">
+          <span class="flex items-center gap-1"><span class="text-sm">🌿</span> Vegetarisch</span>
+          <span class="flex items-center gap-1"><span class="text-sm">🌱</span> Vegan</span>
+        </div>
+        {{ end }}
         
         {{ range .subcategorieen }}
         <div class="mb-8">
