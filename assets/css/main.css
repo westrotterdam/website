@@ -118,9 +118,9 @@
 }
 
 .corner-ribbon {
-  top: 40px;
-  left: -50px;
-  width: 240px;
+  top: 55px;
+  left: -60px;
+  width: 280px;
   padding: 8px 0;
   transform: rotate(-45deg);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
@@ -131,15 +131,15 @@
   .corner-ribbon-wrapper {
     width: 64vw !important;
     height: 64vw !important;
-    max-width: 256px !important;
-    max-height: 256px !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
   }
   
   .corner-ribbon {
-    top: 50px;
+    top: 70px;
     left: -70px;
-    width: 320px;
-    padding: 10px 0;
+    width: 380px;
+    padding: 12px 0;
     font-size: 14px;
   }
 }
