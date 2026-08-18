@@ -138,6 +138,15 @@ hoofdcategorieen:
             omschrijving: "Munt of gember"
             prijs: "3,75"
 
+      - naam: "COCKTAILS & SELTZER"
+        items:
+          - naam: "Aperol Spritz"
+            prijs: "9,00"
+          - naam: "Limoncello Spritz"
+            prijs: "9,00"
+          - naam: "Viper Hard Seltzer"
+            prijs: "5,65"
+
   - naam: "Wijn"
     subcategorieen:
       - naam: "WIT"
@@ -277,14 +286,3 @@ hoofdcategorieen:
             prijs: "3,50"
           - naam: "Van de Streek IPA < 0.5%"
             prijs: "6,00"
-
-  - naam: "Cocktails"
-    subcategorieen:
-      - naam: "OVERIGE ALCOHOLISCHE DRANKEN"
-        items:
-          - naam: "Aperol Spritz"
-            prijs: "9,00"
-          - naam: "Limoncello Spritz"
-            prijs: "9,00"
-          - naam: "Viper Hard Seltzer"
-            prijs: "5,65"
