@@ -116,3 +116,21 @@
   background: linear-gradient(160deg, rgba(100,47,50,0.72) 0%, rgba(17,14,12,0.80) 100%);
   z-index: 1;
 }
+
+.corner-ribbon {
+  position: absolute;
+  top: 32px;
+  left: -40px;
+  background: var(--color-bg-sand);
+  color: var(--color-primary-burgundy);
+  padding: 6px 40px;
+  transform: rotate(-45deg);
+  font-family: var(--font-title);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 20;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  pointer-events: none;
+}
