@@ -1,10 +1,17 @@
 {{ $r := hugo.Data.restaurant }}
 <footer class="flex-shrink-0 py-3 px-6 text-center text-xs border-t"
         style="background: var(--color-bg-sand); border-color: rgba(100,47,50,0.2); color: rgba(100,47,50,0.6);">
-  <div class="max-w-screen-xl mx-auto flex items-center justify-center gap-6">
-    <span>© {{ now.Year }} {{ $r.naam }}</span>
+  <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
+    <div class="flex items-center gap-4">
+      <span>© {{ now.Year }} {{ $r.naam }}</span>
+      {{ if $r.kvk }}
+      <span class="hidden md:inline">•</span>
+      <span>KVK: {{ $r.kvk }}</span>
+      {{ end }}
+    </div>
+    <span class="hidden md:inline">•</span>
     <a href="{{ $r.instagram_url }}" target="_blank" rel="noopener"
-       class="no-underline hover:opacity-75 transition-opacity font-bold"
+       class="no-underline hover:opacity-75 transition-opacity font-bold flex items-center gap-1"
        style="color: var(--color-primary-burgundy);">
       📸 @{{ $r.instagram_handle }}
     </a>
