@@ -3,7 +3,7 @@
 
   <div style="background: var(--color-bg-sand); border-bottom: 2px solid rgba(0,0,0,0.08);">
     <div class="max-w-screen-xl mx-auto flex px-6 overflow-x-auto scrollbar-none">
-      {{ range hugo.Data.menu.categorieen }}
+      {{ range hugo.Data.menu.hoofdcategorieen }}
       <button
         data-tab="{{ .naam | urlize }}"
         class="px-4 py-3 text-sm font-bold whitespace-nowrap border-b-2 border-transparent -mb-0.5 transition-colors"
@@ -16,32 +16,53 @@
 
   <div class="flex-1 overflow-y-auto py-6">
     <div class="max-w-2xl mx-auto px-6 w-full">
-      {{ range hugo.Data.menu.categorieen }}
+      <div class="mb-6 flex gap-4 text-xs" style="color: rgba(17,14,12,0.6);">
+        <span class="flex items-center gap-1"><span class="text-sm">🌿</span> Vegetarisch</span>
+        <span class="flex items-center gap-1"><span class="text-sm">🌱</span> Vegan</span>
+      </div>
+
+      {{ range hugo.Data.menu.hoofdcategorieen }}
       <div class="menu-tab-content" data-tab-content="{{ .naam | urlize }}">
-        {{ range .items }}
-        <div class="flex justify-between items-baseline py-3 border-b"
-             style="border-color: rgba(0,0,0,0.08);">
-          <div class="flex-1 pr-4">
-            <div class="flex items-center gap-2">
-              <span class="text-sm font-bold" style="color: var(--color-text-dark);">
-                {{ .naam }}
+        
+        {{ range .subcategorieen }}
+        <div class="mb-8">
+          <h2 class="text-xl font-bold italic mb-4 pb-2 border-b"
+              style="font-family: var(--font-heading); color: var(--color-primary-burgundy); border-color: rgba(100,47,50,0.2);">
+            {{ .naam }}
+          </h2>
+          
+          <div class="space-y-1">
+            {{ range .items }}
+            <div class="flex justify-between items-baseline py-2 border-b border-dashed"
+                 style="border-color: rgba(0,0,0,0.08);">
+              <div class="flex-1 pr-4">
+                <div class="flex items-center gap-2">
+                  <span class="text-sm font-bold" style="color: var(--color-text-dark);">
+                    {{ .naam }}
+                  </span>
+                  {{ if .vegetarisch }}
+                  <span class="vegetarisch-badge text-xs" title="Vegetarisch">🌿</span>
+                  {{ end }}
+                  {{ if .vegan }}
+                  <span class="vegetarisch-badge text-xs" title="Vegan">🌱</span>
+                  {{ end }}
+                </div>
+                {{ if .omschrijving }}
+                <span class="text-xs italic block mt-0.5" style="font-family: var(--font-heading); color: rgba(17,14,12,0.55);">
+                  {{ .omschrijving }}
+                </span>
+                {{ end }}
+              </div>
+              <span class="text-sm font-bold whitespace-nowrap"
+                    style="font-family: var(--font-heading); color: var(--color-primary-burgundy);">
+                € {{ .prijs }}
               </span>
-              {{ if .vegetarisch }}
-              <span class="vegetarisch-badge text-xs" title="Vegetarisch">🌿</span>
-              {{ end }}
             </div>
-            {{ if .omschrijving }}
-            <span class="text-xs italic" style="font-family: var(--font-heading); color: rgba(17,14,12,0.55);">
-              {{ .omschrijving }}
-            </span>
             {{ end }}
           </div>
-          <span class="text-sm font-bold whitespace-nowrap"
-                style="font-family: var(--font-heading); color: var(--color-primary-burgundy);">
-            € {{ .prijs }}
-          </span>
         </div>
         {{ end }}
+        
       </div>
       {{ end }}
     </div>

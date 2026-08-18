@@ -1,76 +1,92 @@
-categorieen:
-  - naam: "Lunch"
-    items:
-      - naam: "Spaghetti Carbonara"
-        omschrijving: "Ei, guanciale, pecorino romano, zwarte peper"
-        prijs: "9.50"
-        vegetarisch: false
-      - naam: "Penne all'Arrabbiata"
-        omschrijving: "San Marzano tomaat, knoflook, peperoncino"
-        prijs: "8.50"
-        vegetarisch: true
-      - naam: "Risotto Funghi"
-        omschrijving: "Gemengde paddenstoelen, parmezaan, tijm"
-        prijs: "10.50"
-        vegetarisch: true
-      - naam: "Pizza Margherita"
-        omschrijving: "San Marzano, fior di latte, basilicum"
-        prijs: "8.00"
-        vegetarisch: true
-      - naam: "Bruschetta al Pomodoro"
-        omschrijving: "Geroosterd brood, tomaat, knoflook, basilicum"
-        prijs: "5.50"
-        vegetarisch: true
-
-  - naam: "Diner"
-    items:
-      - naam: "Bistecca alla Fiorentina"
-        omschrijving: "Gegrild vlees, rucola, parmezaan, citroen"
-        prijs: "16.50"
-        vegetarisch: false
-      - naam: "Salmone al Forno"
-        omschrijving: "Ovengebakken zalm, kappertjes, citroenboter"
-        prijs: "14.50"
-        vegetarisch: false
-      - naam: "Melanzane alla Parmigiana"
-        omschrijving: "Aubergine, tomaat, mozzarella, parmezaan"
-        prijs: "11.00"
-        vegetarisch: true
-      - naam: "Tagliatelle al Ragù"
-        omschrijving: "Langzaam gegaarde vleessaus, parmezaan"
-        prijs: "12.50"
-        vegetarisch: false
-
-  - naam: "Dolci"
-    items:
-      - naam: "Tiramisù"
-        omschrijving: "Huisgemaakt, mascarpone, espresso, amaretto"
-        prijs: "5.50"
-        vegetarisch: true
-      - naam: "Panna Cotta"
-        omschrijving: "Vanille, verse bessensaus"
-        prijs: "5.00"
-        vegetarisch: true
-      - naam: "Affogato"
-        omschrijving: "Vanille-ijs, dubbele espresso"
-        prijs: "4.50"
-        vegetarisch: true
+hoofdcategorieen:
+  - naam: "Eten"
+    subcategorieen:
+      - naam: "LUNCH"
+        items:
+          - naam: "Focaccia Tonijnsalade"
+            prijs: "11,50"
+          - naam: "Focaccia Kip Pesto"
+            prijs: "12,50"
+          - naam: "Focaccia Burrata"
+            prijs: "13,50"
+      
+      - naam: "PASTA"
+        items:
+          - naam: "Pasta Pesto"
+            prijs: "16,00"
+            vegetarisch: true
+          - naam: "Pasta Rode Biet, Geitenkaas & Walnoot"
+            prijs: "16,50"
+            vegetarisch: true
+          - naam: "Pasta Meatballs"
+            prijs: "17,50"
+          - naam: "Pasta Gamba, Bisque & Pistache"
+            prijs: "19,50"
+      
+      - naam: "PIZZA"
+        items:
+          - naam: "Margherita"
+            prijs: "12,00"
+            vegetarisch: true
+          - naam: "Verdura"
+            omschrijving: "Zonder kaas"
+            prijs: "15,50"
+            vegan: true
+          - naam: "Tonno"
+            prijs: "15,50"
+          - naam: "Pollo"
+            prijs: "16,50"
+          - naam: "Carne"
+            prijs: "17,50"
+          - naam: "Gamba"
+            prijs: "17,50"
+          - naam: "Burrata"
+            prijs: "17,50"
+            
+      - naam: "SALADES"
+        items:
+          - naam: "Venkel, Sinaasappel, Mesclun, Gorgonzola & Citrusdressing"
+            prijs: "14,50"
+          - naam: "Burrata, Cherrytomaat, Basilicum & Mesclun"
+            prijs: "15,50"
+            
+      - naam: "SNACKS"
+        items:
+          - naam: "Bella Cerignola Olijven"
+            prijs: "5,50"
+          - naam: "Focaccia met Boters"
+            prijs: "6,50"
+          - naam: "Arancini Tomaat"
+            prijs: "7,50"
+          - naam: "Arancini Truffel"
+            prijs: "8,50"
+          - naam: "Calamari met Saliemayo"
+            prijs: "9,50"
+          - naam: "Manchego met Compote"
+            prijs: "9,50"
+            
+      - naam: "DESSERTS"
+        items:
+          - naam: "Citroen Sorbet"
+            prijs: "6,50"
+          - naam: "Lychee Sorbet"
+            prijs: "6,50"
+          - naam: "Tiramisu"
+            prijs: "7,50"
+          - naam: "Scroppino"
+            prijs: "8,50"
 
   - naam: "Dranken"
-    items:
-      - naam: "Espresso"
-        omschrijving: ""
-        prijs: "2.50"
-        vegetarisch: true
-      - naam: "Cappuccino"
-        omschrijving: ""
-        prijs: "3.00"
-        vegetarisch: true
-      - naam: "Huiswijn (glas)"
-        omschrijving: "Rood of wit"
-        prijs: "4.50"
-        vegetarisch: true
-      - naam: "San Pellegrino"
-        omschrijving: "250ml"
-        prijs: "2.50"
-        vegetarisch: true
+    subcategorieen:
+      - naam: "Koffie & Thee"
+        items:
+          - naam: "Espresso"
+            prijs: "3,00"
+          - naam: "Cappuccino"
+            prijs: "3,50"
+      - naam: "Fris & Bubbels"
+        items:
+          - naam: "San Pellegrino"
+            prijs: "3,50"
+          - naam: "Huiswijn (glas)"
+            prijs: "5,50"
