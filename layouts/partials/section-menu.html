@@ -26,10 +26,17 @@
         
         {{ range .subcategorieen }}
         <div class="mb-8">
-          <h2 class="text-xl font-bold italic mb-4 pb-2 border-b"
+          <h2 class="text-xl font-bold italic mb-1 pb-1 border-b"
               style="font-family: var(--font-heading); color: var(--color-primary-burgundy); border-color: rgba(100,47,50,0.2);">
             {{ .naam }}
           </h2>
+          {{ if .omschrijving }}
+          <p class="text-xs mb-4 italic" style="font-family: var(--font-heading); color: rgba(17,14,12,0.6);">
+            {{ .omschrijving }}
+          </p>
+          {{ else }}
+          <div class="mb-4"></div>
+          {{ end }}
           
           <div class="space-y-1">
             {{ range .items }}
