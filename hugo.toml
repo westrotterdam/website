@@ -2,6 +2,8 @@ baseURL = "https://westrotterdam.nl"
 languageCode = "nl"
 title = "West — Italiaans Restaurant Rotterdam"
 defaultContentLanguage = "nl"
+disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
 
 [build]
   writeStats = true
