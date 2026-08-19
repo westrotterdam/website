@@ -2,79 +2,114 @@ hoofdcategorieen:
   - naam: "Eten"
     subcategorieen:
       - naam: "LUNCH"
+        omschrijving: "12:00 - 17:00"
         items:
-          - naam: "Focaccia Tonijnsalade"
+          - naam: "Focaccia tonijnsalade"
             prijs: "11,50"
-          - naam: "Focaccia Kip Pesto"
+          - naam: "Focaccia kip pesto"
             prijs: "12,50"
-          - naam: "Focaccia Burrata"
+          - naam: "Focaccia burrata"
             prijs: "13,50"
-      
-      - naam: "PASTA"
+            vegetarisch: true
+          - naam: "Tomatensoep met focaccia"
+            prijs: "7,50"
+            vegetarisch: true
+
+      - naam: "SNACKS"
         items:
-          - naam: "Pasta Pesto"
-            prijs: "16,00"
+          - naam: "Bella Cerignola olijven"
+            prijs: "5,50"
+            vegan: true
+          - naam: "Focaccia met boters"
+            prijs: "6,50"
             vegetarisch: true
-          - naam: "Pasta Rode Biet, Geitenkaas & Walnoot"
-            prijs: "16,50"
+          - naam: "Arancini tomaat"
+            prijs: "7,50"
             vegetarisch: true
-          - naam: "Pasta Meatballs"
-            prijs: "17,50"
-          - naam: "Pasta Gamba, Bisque & Pistache"
-            prijs: "19,50"
-      
-      - naam: "PIZZA"
+          - naam: "Arancini truffel"
+            prijs: "8,50"
+            vegetarisch: true
+          - naam: "Calamari met saliemayo"
+            prijs: "9,50"
+          - naam: "Manchego met compote"
+            prijs: "9,50"
+            vegetarisch: true
+
+      - naam: "PIZZA'S"
+        omschrijving: "17:00 - 21:30"
         items:
           - naam: "Margherita"
+            omschrijving: "Tomatensaus, fior di latte mozzarella, basilicum"
             prijs: "12,00"
             vegetarisch: true
           - naam: "Verdura"
-            omschrijving: "Zonder kaas"
+            omschrijving: "Tomatensaus, courgette, geroosterde paprika, cherrytomaat"
             prijs: "15,50"
             vegan: true
           - naam: "Tonno"
+            omschrijving: "Tomatensaus, fior di latte mozzarella, tonijn, rode ui, zwarte olijf"
             prijs: "15,50"
           - naam: "Pollo"
+            omschrijving: "Tomatensaus, fior di latte mozzarella, kip, pesto, half gedroogde tomaatjes"
             prijs: "16,50"
           - naam: "Carne"
+            omschrijving: "Tomatensaus, fior di latte mozzarella, chorizo, pancetta, ei, salie"
             prijs: "17,50"
           - naam: "Gamba"
+            omschrijving: "Tomatensaus, fior di latte mozzarella, gamba, peterselie, knoflook, rode peper"
             prijs: "17,50"
           - naam: "Burrata"
+            omschrijving: "Burrata, cherrytomaat, basilicum"
             prijs: "17,50"
+            vegetarisch: true
             
+      - naam: "PASTA'S"
+        omschrijving: "17:00 - 21:30"
+        items:
+          - naam: "Pesto"
+            prijs: "16,00"
+            vegetarisch: true
+          - naam: "Rode biet, geitenkaas, walnoot"
+            prijs: "16,50"
+            vegetarisch: true
+          - naam: "Gehaktballetjes"
+            prijs: "17,50"
+          - naam: "Gamba, bisque, pistache"
+            prijs: "19,50"
+
       - naam: "SALADES"
         items:
-          - naam: "Venkel, Sinaasappel, Mesclun, Gorgonzola & Citrusdressing"
+          - naam: "Venkel, sinaasappel, mesclun"
+            omschrijving: "Met gorgonzola en citrusdressing"
             prijs: "14,50"
-          - naam: "Burrata, Cherrytomaat, Basilicum & Mesclun"
+            vegetarisch: true
+          - naam: "Burrata, cherrytomaat, basilicum, mesclun"
             prijs: "15,50"
+            vegetarisch: true
             
-      - naam: "SNACKS"
+      - naam: "KINDEREN"
         items:
-          - naam: "Bella Cerignola Olijven"
-            prijs: "5,50"
-          - naam: "Focaccia met Boters"
-            prijs: "6,50"
-          - naam: "Arancini Tomaat"
-            prijs: "7,50"
-          - naam: "Arancini Truffel"
-            prijs: "8,50"
-          - naam: "Calamari met Saliemayo"
+          - naam: "Pasta met rode saus"
+            prijs: "12,50"
+            vegetarisch: true
+          - naam: "Kinderpizza"
             prijs: "9,50"
-          - naam: "Manchego met Compote"
-            prijs: "9,50"
-            
-      - naam: "DESSERTS"
+            vegetarisch: true
+
+      - naam: "DESSERT"
         items:
-          - naam: "Citroen Sorbet"
+          - naam: "Citroen sorbet"
             prijs: "6,50"
-          - naam: "Lychee Sorbet"
+            vegan: true
+          - naam: "Lychee sorbet"
             prijs: "6,50"
+            vegan: true
           - naam: "Tiramisu"
             prijs: "7,50"
+            vegetarisch: true
           - naam: "Scroppino"
             prijs: "8,50"
+            vegetarisch: true
 
   - naam: "Dranken"
     subcategorieen:
@@ -135,16 +170,31 @@ hoofdcategorieen:
             omschrijving: "Verschillende smaken"
             prijs: "3,25"
           - naam: "Verse thee"
-            omschrijving: "Munt of gember"
+            omschrijving: "Munt / gember"
             prijs: "3,75"
 
-      - naam: "COCKTAILS & SELTZER"
+      - naam: "GEDISTILLEERD"
+        items:
+          - naam: "Limoncello (MANDA)"
+            prijs: "5,00"
+          - naam: "Sjaak (MANDA)"
+            prijs: "5,00"
+          - naam: "Jonge jenever"
+            prijs: "6,00"
+          - naam: "Loopuyt gin"
+            prijs: "6,00"
+          - naam: "Vodka"
+            prijs: "6,00"
+          - naam: "Tequila"
+            prijs: "6,00"
+
+      - naam: "OVERIGEN"
         items:
           - naam: "Aperol Spritz"
             prijs: "9,00"
           - naam: "Limoncello Spritz"
             prijs: "9,00"
-          - naam: "Viper Hard Seltzer"
+          - naam: "Viper"
             prijs: "5,65"
 
   - naam: "Wijn"
@@ -152,7 +202,7 @@ hoofdcategorieen:
       - naam: "WIT"
         omschrijving: "Glas / Fles"
         items:
-          - naam: "Domaine L’Arjolle Blanc"
+          - naam: "Domaine L'Arjolle Blanc"
             omschrijving: "Sauvignon Blanc, Viognier"
             prijs: "5,50 / 27,50"
           - naam: "Casa Giona"
@@ -174,7 +224,7 @@ hoofdcategorieen:
       - naam: "ROOD"
         omschrijving: "Glas / Fles"
         items:
-          - naam: "Domaine L’Arjolle Rouge"
+          - naam: "Domaine L'Arjolle Rouge"
             omschrijving: "Merlot, Cabernet Sauvignon"
             prijs: "5,50 / 27,50"
           - naam: "Bodegas Piqueras Black Label"
@@ -193,7 +243,7 @@ hoofdcategorieen:
       - naam: "ROSÉ"
         omschrijving: "Glas / Fles"
         items:
-          - naam: "Domaine L’Arjolle Rosé"
+          - naam: "Domaine L'Arjolle Rosé"
             omschrijving: "Syrah, Grenache"
             prijs: "5,50 / 27,50"
 
@@ -210,19 +260,20 @@ hoofdcategorieen:
   - naam: "Bier"
     subcategorieen:
       - naam: "OP DE TAP"
+        omschrijving: "Klein / Middel / Groot"
         items:
           - naam: "Peroni pilsner"
-            prijs: "2,50 / 3,50"
+            prijs: "2,50 / 3,50 / 6,00"
           - naam: "Hangende Harry IPA"
-            prijs: "5,50"
+            prijs: "5,50 / 9,00"
           - naam: "Disco Daisy blond"
-            prijs: "5,50"
+            prijs: "5,50 / 9,00"
           - naam: "Weihenstephaner"
-            prijs: "4,75"
+            prijs: "4,75 / 7,75"
           - naam: "Gouden Carolus tripel"
-            prijs: "6,00"
+            prijs: "6,00 / 10,00"
           - naam: "Blanche de Namur"
-            prijs: "5,00"
+            prijs: "5,00 / 8,75"
 
       - naam: "OP FLES — Weizen"
         items:
@@ -253,7 +304,7 @@ hoofdcategorieen:
 
       - naam: "OP FLES — (NE)IPA / Pale Ale"
         items:
-          - naam: "Noordt Pomelo"
+          - naam: "Kaapse Karel"
             prijs: "6,25"
           - naam: "Van de Streek Hop Art"
             prijs: "6,90"
@@ -267,6 +318,8 @@ hoofdcategorieen:
           - naam: "Gulden Draak Imperial Stout"
             prijs: "7,50"
           - naam: "St. Bernardus Abt 12"
+            prijs: "7,25"
+          - naam: "Orval"
             prijs: "7,25"
 
       - naam: "OP FLES — Cider / Fruit / Zuur"
