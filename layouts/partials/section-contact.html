@@ -15,11 +15,6 @@
             <span style="color: var(--color-primary-burgundy);">📍</span>
             <span>{{ $r.adres }}<br/>{{ $r.postcode }} {{ $r.stad }}</span>
           </div>
-          <div class="flex gap-3 hidden">
-            <span style="color: var(--color-primary-burgundy);">📞</span>
-            <a href="tel:{{ $r.telefoon }}" class="font-bold"
-               style="color: var(--color-text-dark);">{{ $r.telefoon }}</a>
-          </div>
           <div class="flex gap-3">
             <span style="color: var(--color-primary-burgundy);">✉️</span>
             <a href="mailto:{{ $r.email }}"
@@ -66,14 +61,14 @@
 
   <div style="background: var(--color-primary-burgundy);">
     <div class="max-w-screen-xl mx-auto py-5 px-8 text-center">
-      <p class="text-sm italic mb-1"
+      <p class="text-sm italic mb-2"
          style="font-family: var(--font-heading); color: rgba(255,255,255,0.85);">
-        Reserveren? Bel ons direct —
+        Verzeker jezelf van een plekje —
       </p>
-      <a href="tel:{{ $r.telefoon }}"
-         class="text-2xl font-black"
-         style="font-family: var(--font-title); color: white;">
-        {{ $r.telefoon }}
+      <a href="{{ $r.tebi_reservations_url }}" target="_blank" rel="noopener"
+         class="text-2xl font-black no-underline"
+         style="font-family: var(--font-title); color: white; display: inline-block;">
+        Reserveer Online
       </a>
     </div>
   </div>
