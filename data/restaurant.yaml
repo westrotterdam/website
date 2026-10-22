@@ -10,3 +10,5 @@ instagram_url: "https://www.instagram.com/bijwest/"
 osm_lat: "51.917330"
 osm_lon: "4.453532"
 kvk: "42108622"
+# Tekst op het lint linksboven op de homepage. Leeg laten = geen lint.
+ribbon_tekst: ""

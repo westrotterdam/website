@@ -127,6 +127,28 @@ Voor een gesloten dag:
 
 ---
 
+## Lint (ribbon) op de homepage
+
+Linksboven op de homepage kan een diagonaal lint staan met een korte tekst, bijvoorbeeld "Nu open!" of "Gesloten t/m 5 januari".
+
+**Bestand:** `data/restaurant.yaml`
+
+Zet de tekst bij `ribbon_tekst`:
+
+```yaml
+ribbon_tekst: "Nu open!"
+```
+
+Wil je geen lint meer, maak het veld dan leeg. Het lint verdwijnt dan helemaal van de website:
+
+```yaml
+ribbon_tekst: ""
+```
+
+Houd de tekst kort (ongeveer 25 tekens of minder), anders past hij niet op het lint. Na het opslaan wordt de site opnieuw gebouwd, zie "Controleren" hierboven.
+
+---
+
 ## Foto's op de homepage vervangen
 
 De drie sfeerfotos op de homepage staan in:

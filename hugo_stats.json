@@ -9,10 +9,12 @@
       "footer",
       "h1",
       "h2",
+      "h3",
       "head",
       "html",
       "iframe",
       "img",
+      "li",
       "link",
       "main",
       "meta",
@@ -21,8 +23,10 @@
       "script",
       "section",
       "span",
+      "strong",
       "style",
-      "title"
+      "title",
+      "ul"
     ],
     "classes": [
       "-mb-0.5",
@@ -68,10 +72,12 @@
       "justify-between",
       "justify-center",
       "leading-none",
+      "leading-relaxed",
       "left-0",
       "max-w-2xl",
       "max-w-screen-xl",
       "mb-1",
+      "mb-2",
       "mb-3",
       "mb-4",
       "mb-6",
@@ -97,14 +103,17 @@
       "overflow-hidden",
       "overflow-x-auto",
       "overflow-y-auto",
+      "page-text",
       "pb-1",
       "pb-2",
       "pointer-events-none",
       "pr-4",
+      "privacy-content",
       "px-4",
       "px-6",
       "px-8",
       "py-1",
+      "py-10",
       "py-2",
       "py-3",
       "py-4",
@@ -121,6 +130,7 @@
       "space-y-1",
       "space-y-3",
       "text-2xl",
+      "text-3xl",
       "text-5xl",
       "text-base",
       "text-center",
@@ -146,9 +156,16 @@
       "z-20"
     ],
     "ids": [
+      "anonieme-bezoekstatistieken",
+      "bewaartermijn",
+      "diensten-van-derden",
+      "hosting",
+      "jouw-rechten",
       "section-contact",
       "section-home",
-      "section-menu"
+      "section-menu",
+      "wat-we-verzamelen",
+      "wie-zijn-wij"
     ]
   }
 }
