@@ -20,7 +20,3 @@
 <!-- Tailwind CSS via Hugo Pipes -->
 {{ $css := resources.Get "css/main.css" | css.TailwindCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
-
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-  data-cf-beacon='{"token": "VERVANG_MET_JOUW_TOKEN"}'></script>

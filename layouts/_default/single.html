@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="page-text" style="margin: 0; background: var(--color-bg-sand); color: var(--color-text-dark);">
+
+  {{ $r := hugo.Data.restaurant }}
+  <nav class="border-b-2"
+       style="background: var(--color-bg-sand); border-color: var(--color-primary-burgundy);">
+    <div class="max-w-screen-xl mx-auto flex items-center justify-between px-6 py-3">
+      <a href="/" class="flex items-center gap-3 no-underline">
+        <img src="/images/West - Beeldmerk/Beeldmerk - SVG/West -Beeldmerk - Donkerbruin.svg"
+             alt="West beeldmerk" class="w-9 h-9" />
+        <span class="font-black text-xl tracking-tight"
+              style="font-family: var(--font-title); color: var(--color-text-dark);">{{ $r.naam }}</span>
+      </a>
+      <a href="/" class="text-sm font-bold no-underline" style="color: var(--color-primary-burgundy);">← Terug naar de website</a>
+    </div>
+  </nav>
+
+  <main class="max-w-2xl mx-auto px-6 py-10 text-base leading-relaxed">
+    <h1 class="font-black text-3xl mb-6" style="font-family: var(--font-title); color: var(--color-primary-burgundy);">{{ .Title }}</h1>
+    <div class="privacy-content">
+      {{ .Content }}
+    </div>
+  </main>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>

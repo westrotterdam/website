@@ -115,6 +115,47 @@ Om een foto te vervangen:
 
 ---
 
+## Hosting en overdracht
+
+### Hoe komt een wijziging online?
+
+```
+Wijziging op GitHub (branch main)  →  Cloudflare Pages ziet de wijziging
+→ Cloudflare bouwt de site met Hugo  →  live op https://westrotterdam.nl
+```
+
+- De code staat op GitHub: `westrotterdam/website`.
+- Cloudflare Pages is gekoppeld aan die repository ("Connect to Git") en haalt de code zelf op.
+- Er zijn geen GitHub Actions of andere CI-configuratie. Alle instellingen staan in het Cloudflare-dashboard.
+- Een wijziging staat meestal binnen een paar minuten online.
+- De site is bereikbaar op `westrotterdam.nl`, `www.westrotterdam.nl` en `westrotterdam.pages.dev` (het Pages-project heet `westrotterdam`).
+
+### Build-instellingen in Cloudflare Pages
+
+| Instelling | Waarde |
+|---|---|
+| Framework preset | Hugo |
+| Build command | `hugo --minify` |
+| Build output directory | `public` |
+| Environment variable | `HUGO_VERSION` = `0.159.0` |
+
+Controleer deze waarden in het Cloudflare-dashboard onder het Pages-project, tab *Settings*.
+
+### Nog te doen
+
+- Telefoonnummer in `data/restaurant.yaml` is nog een placeholder (`010-0000000`).
+
+### Lokaal werken (alleen voor ontwikkelaars)
+
+Met [Nix](https://nixos.org) levert `nix develop` Hugo en Tailwind. Daarna:
+
+- `hugo server` voor een lokale preview op http://localhost:1313
+- `hugo --minify` voor een productiebuild
+
+Meer achtergrond staat in `docs/superpowers/specs/` (ontwerp) en `docs/superpowers/plans/` (implementatie).
+
+---
+
 ## Vragen of hulp nodig?
 
 Neem contact op met de ontwikkelaar.
