@@ -18,7 +18,7 @@ Hier staan het adres, telefoonnummer, e-mail en Instagram. Pas deze aan als iets
 
 ```yaml
 naam: "West"
-telefoon: "010-0000000"
+telefoon: "010-00000001"
 email: "info@westrotterdam.nl"
 adres: "Burgemeester Meineszlaan 2-A"
 postcode: "3022 BH"
