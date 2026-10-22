@@ -117,33 +117,6 @@
   z-index: 1;
 }
 
-.corner-ribbon {
-  top: 55px;
-  left: -60px;
-  width: 280px;
-  padding: 8px 0;
-  transform: rotate(-45deg);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  font-size: 11px;
-}
-
-@media (min-width: 768px) {
-  .corner-ribbon-wrapper {
-    width: 64vw !important;
-    height: 64vw !important;
-    max-width: 300px !important;
-    max-height: 300px !important;
-  }
-  
-  .corner-ribbon {
-    top: 70px;
-    left: -70px;
-    width: 380px;
-    padding: 12px 0;
-    font-size: 14px;
-  }
-}
-
 /* Tekstpagina's (bijv. privacy): normaal scrollen, ook op desktop */
 @media (min-width: 768px) {
   body.page-text {
