@@ -35,42 +35,71 @@ osm_lon: "4.453532"
 
 **Bestand:** `data/menu.yaml`
 
-Het menu is opgebouwd uit categorieën (Lunch, Diner, etc.) met daarin de gerechten.
+Het menu heeft drie niveaus:
 
-### Gerecht toevoegen
+1. **Hoofdcategorie**: `Eten`, `Dranken`, `Wijn`
+2. **Subcategorie**: bijvoorbeeld `LUNCH`, `PIZZA'S`, `WARME DRANKEN`
+3. **Gerecht of drankje** (`items`)
 
-Voeg een nieuw item toe onder de juiste categorie:
+Zo ziet een stukje eruit:
 
 ```yaml
-- naam: "Naam van het gerecht"
-  omschrijving: "Korte beschrijving van de ingrediënten"
-  prijs: "12.50"
-  vegetarisch: true   # true = vegetarisch, false = niet vegetarisch
+hoofdcategorieen:
+  - naam: "Eten"
+    subcategorieen:
+      - naam: "PIZZA'S"
+        omschrijving: "17:00 - 21:30"        # optioneel, staat onder de titel
+        items:
+          - naam: "Margherita"
+            omschrijving: "Tomatensaus, mozzarella, basilicum"   # optioneel
+            prijs: "11,50"
+            vegetarisch: true                # optioneel
+```
+
+Let op de **inspringing** (spaties, geen tabs): die bepaalt bij welk onderdeel een regel hoort.
+
+### Gerecht of drankje toevoegen
+
+Kopieer een bestaand gerecht uit dezelfde subcategorie, plak het eronder en pas het aan. Alleen `naam` en `prijs` zijn verplicht:
+
+```yaml
+          - naam: "Naam van het gerecht"
+            omschrijving: "Korte beschrijving"   # weglaten als je het niet nodig hebt
+            prijs: "12,50"
+            vegetarisch: true                    # weglaten als het niet vegetarisch is
+```
+
+### Prijs aanpassen
+
+Verander alleen de waarde achter `prijs:`. Gebruik een **komma** en zet **geen** euroteken neer, want dat wordt automatisch toegevoegd:
+
+```yaml
+            prijs: "11,00"
 ```
 
 ### Gerecht verwijderen
 
-Verwijder de vier regels (`naam`, `omschrijving`, `prijs`, `vegetarisch`) van het gerecht.
+Verwijder alle regels van dat gerecht, van `- naam: ...` tot en met de laatste regel vóór het volgende `- naam:`.
 
-### Prijs aanpassen
+### Vegetarisch of vegan markeren
 
-Verander alleen de waarde achter `prijs:`, bijvoorbeeld:
-```yaml
-prijs: "11.00"
-```
+Zet `vegetarisch: true` (🌿) of `vegan: true` (🌱) onder het gerecht. Is het geen van beide, laat die regel dan weg.
 
-### Categorie toevoegen
+### Subcategorie toevoegen
 
-Voeg een nieuwe categorie toe aan het einde van het bestand:
+Voeg onder `subcategorieen:` van de juiste hoofdcategorie een nieuw blok toe:
 
 ```yaml
-  - naam: "Nieuwe categorie"
-    items:
-      - naam: "Eerste gerecht"
-        omschrijving: "Omschrijving"
-        prijs: "9.00"
-        vegetarisch: false
+      - naam: "NIEUWE CATEGORIE"
+        omschrijving: "Optionele toelichting of tijden"
+        items:
+          - naam: "Eerste gerecht"
+            prijs: "9,00"
 ```
+
+### Controleren
+
+Na het opslaan wordt de site opnieuw gebouwd. Staat er een fout in het bestand (bijvoorbeeld verkeerde inspringing), dan mislukt die build en blijft de oude versie online staan. Check na een wijziging of de site binnen een paar minuten is bijgewerkt.
 
 ---
 
