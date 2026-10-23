@@ -24,21 +24,32 @@ hoofdcategorieen:
           - naam: "Tomatensoep met focaccia"
             prijs: "7,50"
             vegetarisch: true
-      - naam: "SNACKS"
+      - naam: "BORREL"
         items:
           - naam: "Bella Cerignola olijven"
             prijs: "5,50"
             vegan: true
-          - naam: "Focaccia met boters"
-            prijs: "6,50"
+          - naam: "Brood met tomatenboter"
+            prijs: "5,00"
             vegetarisch: true
+          - naam: "Friet met basiliciummayonaise"
+            prijs: "5,50"
           - naam: "Arancini tomaat"
-            prijs: "7,50"
-            vegetarisch: true
-          - naam: "Arancini truffel"
             prijs: "8,50"
             vegetarisch: true
-          - naam: "Calamari met saliemayo"
+          - naam: "Arancini truffel"
+            prijs: "9,50"
+            vegetarisch: true
+          - naam: "Caponata - brood"
+            prijs: "9,00"
+            vegetarisch: true
+          - naam: "Calamari met saliemayonaise"
+            prijs: "9,50"
+          - naam: "Eendenrilette - brood"
+            prijs: "10,50"
+          - naam: "Gamba's uit de oven"
+            prijs: "12,50"
+          - naam: "Charcuterie - diverse vleessoorten"
             prijs: "9,50"
           - naam: "Manchego met compote"
             prijs: "9,50"
