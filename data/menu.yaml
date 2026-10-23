@@ -5,11 +5,21 @@ hoofdcategorieen:
         omschrijving: "12:00 - 17:00"
         items:
           - naam: "Broodje tonijnsalade"
-            prijs: "11,50"
-          - naam: "Focaccia kip pesto"
+            prijs: "11,00"
+          - naam: "Broodje kip"
             prijs: "12,50"
-          - naam: "Focaccia burrata"
+          - naam: "Broodje burrata"
+            prijs: "14,00"
+            vegetarisch: true
+          - naam: "Broodje mortadella"
+            prijs: "14,50"
+          - naam: "Broodje zalm"
             prijs: "13,50"
+          - naam: "Broodje caponata"
+            prijs: "10,00"
+            vegetarisch: true
+          - naam: "Broodje gegrilde groenten"
+            prijs: "10,00"
             vegetarisch: true
           - naam: "Tomatensoep met focaccia"
             prijs: "7,50"
