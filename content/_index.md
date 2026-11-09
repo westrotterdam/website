@@ -1,4 +1,4 @@
 ---
-title: "West — Italiaans Restaurant Rotterdam"
-description: "Italiaans restaurant in Rotterdam West. Vers eten, eerlijke prijzen, de hele dag open."
+title: "West"
+description: "Van je eerste koffie tot je laatste borrel. En alles wat daartussen gebeurt."
 ---
