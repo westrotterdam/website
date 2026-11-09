@@ -87,12 +87,12 @@ hoofdcategorieen:
         omschrijving: "17:00 - 21:30"
         items:
           - naam: "Pesto"
-            prijs: "16,00"
+            prijs: "15,50"
             vegetarisch: true
-          - naam: "Rode biet, geitenkaas, walnoot"
+          - naam: "Caponata"
             prijs: "16,50"
             vegetarisch: true
-          - naam: "Gehaktballetjes"
+          - naam: "Polpette"
             prijs: "17,50"
           - naam: "Gamba, bisque, pistache"
             prijs: "19,50"
@@ -100,29 +100,33 @@ hoofdcategorieen:
       - naam: "SALADES"
         items:
           - naam: "Venkel, sinaasappel, mesclun"
-            omschrijving: "Met gorgonzola en citrusdressing"
-            prijs: "14,50"
+            omschrijving: "Met walnoot, gorgonzola en citrusdressing"
+            prijs: "11,50/15,50"
             vegetarisch: true
-          - naam: "Burrata, cherrytomaat, basilicum, mesclun"
-            prijs: "15,50"
+          - naam: "Kip, cherrytomaat, mesclun"
+            omschrijving: "Met ansjovis en parmezaan"
+            prijs: "16,50/19,50"
             vegetarisch: true
             
       - naam: "KINDEREN"
         items:
           - naam: "Pasta met rode saus"
-            prijs: "12,50"
+            prijs: "8,50"
             vegetarisch: true
-          - naam: "Kinderpizza"
-            prijs: "9,50"
+          - naam: "Pasta met gehaktballetjes"
+            prijs: "10,00"
+            vegetarisch: false
+          - naam: "Kinderpizza margherita"
+            prijs: "7,50"
             vegetarisch: true
 
-      - naam: "DESSERT"
+      - naam: "ZOET"
         items:
-          - naam: "Citroen sorbet"
-            prijs: "6,50"
-            vegan: true
-          - naam: "Lychee sorbet"
-            prijs: "6,50"
+          - naam: "Vanille-ijs"
+            prijs: "4,50"
+            vegan: false
+          - naam: "Citroen/aardbei sorbet"
+            prijs: "4,50"
             vegan: true
           - naam: "Tiramisu"
             prijs: "7,50"
