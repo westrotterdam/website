@@ -1,18 +1,33 @@
 <section id="section-menu" class="site-section flex-col"
          style="background: var(--color-bg-cream-secondary);">
 
-  <div style="background: var(--color-bg-sand); border-bottom: 2px solid rgba(0,0,0,0.08);">
-    <div class="max-w-screen-xl mx-auto flex px-6 overflow-x-auto scrollbar-none">
+  
+<div style="background: var(--color-bg-cream-secondary);">
+  <div class="max-w-2xl mx-auto px-6 py-6">
+    <div class="grid grid-cols-2 gap-4">
+
       {{ range hugo.Data.menu.hoofdcategorieen }}
       <button
         data-tab="{{ .naam | urlize }}"
-        class="px-4 py-3 text-sm font-bold whitespace-nowrap border-b-2 border-transparent -mb-0.5 transition-colors"
-        style="color: var(--color-primary-burgundy);">
-        {{ .naam }}
+        class="menu-tab px-3 py-6 rounded-lg text-center transition-all"
+        style="background: #642F32; color: #FFF7E0;">
+
+        <span class="block text-xl md:text-2xl font-bold"
+              style="font-family: var(--font-heading);">
+          {{ if eq (.naam | urlize) "eten" }}Aan tafel{{ else }}Aan de bar{{ end }}
+        </span>
+
+        <span class="block text-xs uppercase tracking-widest mt-2">
+          {{ if eq (.naam | urlize) "eten" }}Eten bij West{{ else }}Drinken bij West{{ end }}
+        </span>
+
       </button>
       {{ end }}
+
     </div>
   </div>
+</div>
+
 
   <div class="flex-1 overflow-y-auto py-6">
     <div class="max-w-2xl mx-auto px-6 w-full">
