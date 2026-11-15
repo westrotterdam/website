@@ -1,20 +1,14 @@
 {{ $r := hugo.Data.restaurant }}
-<nav class="border-b-2"
-     style="background: var(--color-bg-sand); border-color: var(--color-primary-burgundy);">
+<nav 
+     style="background: var(--color-bg-sand);">
   <div class="max-w-screen-xl mx-auto flex items-center justify-between px-6 py-3">
 
-    <a href="/" data-nav="home" class="flex items-center gap-3 no-underline">
-      <img
-        src="/images/West - Beeldmerk/Beeldmerk - SVG/West -Beeldmerk - Donkerbruin.svg"
-        alt="West beeldmerk"
-        class="w-9 h-9"
-      />
-      <span class="font-black text-xl tracking-tight"
-            style="font-family: var(--font-title); color: var(--color-text-dark);">
-        {{ $r.naam }}
-      </span>
-    </a>
-
+    <a href="/" data-nav="home" class="flex items-center no-underline">
+  <span class="font-black text-3xl md:text-4xl tracking-tight"
+        style="font-family: var(--font-title); color: #8A843D;">
+    {{ $r.naam }}
+  </span>
+</a>
     <div class="hidden md:flex gap-8">
       <a href="/" data-nav="home"
          class="text-sm font-bold transition-colors nav-link"
@@ -48,5 +42,10 @@
   .nav-active {
     color: var(--color-primary-burgundy) !important;
     border-bottom: 2px solid var(--color-primary-burgundy);
+  }
+
+  nav a[data-nav="home"]:not(.nav-link) {
+    border-bottom: none !important;
+    color: #8A843D !important;
   }
 </style>
