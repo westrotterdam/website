@@ -22,5 +22,7 @@
   {{ $instagram := resources.Get "js/instagram.js" | minify | fingerprint }}
   <script src="{{ $instagram.RelPermalink }}" integrity="{{ $instagram.Data.Integrity }}" defer></script>
 
+
+<script src="https://live.tebi.co/ecom/widget-manager.js" data-widget-token="103468_74ff0d3f6c4eaf60821ac0c09c34ea0c1411433f608243bd48050cce93252351" id="tebi" data-no-minify="1"></script>
 </body>
 </html>
