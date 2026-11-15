@@ -104,14 +104,14 @@ Vervang de inhoud van `flake.nix` met:
 ```toml
 baseURL = "https://westrotterdam.nl"
 languageCode = "nl"
-title = "West — Italiaans Restaurant Rotterdam"
+title = "West"
 defaultContentLanguage = "nl"
 
 [build]
   writeStats = true
 
 [params]
-  description = "Italiaans restaurant in Rotterdam West. Eerlijk eten, eerlijke prijzen."
+  description = "Van je eerste koffie tot je laatste borrel. En alles wat daartussen gebeurt."
 ```
 
 - [ ] **Stap 3: Maak .gitignore aan**
@@ -129,8 +129,8 @@ node_modules/
 
 ```markdown
 ---
-title: "West — Italiaans Restaurant Rotterdam"
-description: "Italiaans restaurant in Rotterdam West. Vers eten, eerlijke prijzen, de hele dag open."
+title: "West"
+description: "Van je eerste koffie tot je laatste borrel. En alles wat daartussen gebeurt."
 ---
 ```
 
